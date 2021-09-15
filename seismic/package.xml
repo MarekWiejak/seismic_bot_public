@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>seismic</name>
+  <version>0.1.0</version>
+  <description>The seismic package</description>
+  <maintainer email="mwiejak@camk.edu.pl">Marek Wiejak</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>creane_state_machine</exec_depend>
+  <exec_depend>raspi_gpio</exec_depend>
+  <exec_depend>robot_state_machine</exec_depend>
+  <exec_depend>rosserial</exec_depend>
+  <exec_depend>rosserial_python</exec_depend>
+  <exec_depend>rplidar_ros</exec_depend>
+  <exec_depend>seismic_basic</exec_depend>
+  <exec_depend>seismic_bringup</exec_depend>
+  <exec_depend>sensor_server</exec_depend>
+  <exec_depend>task_determiner</exec_depend>
+  <exec_depend>tic_crane</exec_depend>
+  <exec_depend>navigation</exec_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

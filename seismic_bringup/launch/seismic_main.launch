@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find seismic_bringup)/launch/move_base.launch"/>
+    <node pkg="robot_state_machine" type="robot_state_machine_node.py" name="robot_state_machine_node" output="screen">
+        <rosparam file="$(find seismic_bringup)/config/robot_sm_params.yaml" command="load"/>
+    </node>
+    <node pkg="task_determiner" type="fake_task_generator.py" name="fake_task_generator_node" output="screen"/>
+</launch>

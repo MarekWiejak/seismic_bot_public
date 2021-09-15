@@ -1,0 +1,4 @@
+---
+string next_step
+bool if_measure_after_movement
+geometry_msgs/PoseStamped goal_pose

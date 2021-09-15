@@ -1,0 +1,9 @@
+#goal definition
+int32 timeout
+int32 speed
+---
+#result definition
+bool state
+---
+#feedback
+bool state

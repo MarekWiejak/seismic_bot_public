@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="tic_crane" type="tic_crane_node" name="tic_crane_node" output="screen"/>
+    <node pkg="raspi_gpio" type="gpio_server_node.py" name="gpio_server_node" output="screen">
+        <rosparam file="$(find seismic_bringup)/config/gpio_params.yaml" command="load"/>
+    </node>
+    <node pkg="sensor_server" type="sensor_server_node" name="sensor_server_node" output="screen"/>
+    <node pkg="crane_state_machine" type="crane_state_machine_node.py" name="crane_state_machine_node" output="screen">
+        <rosparam file="$(find seismic_bringup)/config/crane_sm_params.yaml" command="load"/>
+    </node>
+</launch>

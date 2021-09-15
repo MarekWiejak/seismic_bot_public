@@ -1,0 +1,12 @@
+deploy_speed: 1200
+deploy_position: -9500
+
+store_speed: 1200
+store_position: 0
+
+recover_speed: 600
+recover_timeout: 30
+
+fake_measurement_time: 7
+
+measurement_action_name: sensor_server_node/measurement

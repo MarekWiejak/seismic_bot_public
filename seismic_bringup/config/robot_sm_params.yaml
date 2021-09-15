@@ -1,0 +1,4 @@
+new_task_service_name: fake_task_generator_node/new_task
+
+recover_speed: 600
+recover_timeout: 30

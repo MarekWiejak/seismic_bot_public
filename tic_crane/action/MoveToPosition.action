@@ -1,0 +1,9 @@
+#goal definition
+int32 position
+int32 speed
+---
+#result definition
+int32 position
+---
+#feedback
+int32 position

@@ -1,0 +1,8 @@
+#goal definition
+int32 measurement_duration
+---
+#result definition
+bool if_succeded
+---
+#feedback
+int32 time_left

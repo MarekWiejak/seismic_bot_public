@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="seismic_basic" name="odometry_node" type="odometry_node"/>
+    <node pkg="seismic_basic" name="controller2vel_node" type="controller2vel_node.py"/>
+    <node pkg="rosserial_python" name="serial_node" type="serial_node.py" args="/dev/ttyACM0"/>
+    <node pkg="tf" name="laser_transform" type="static_transform_publisher" args="-0.013 0 0 0 0 1 0 robot_frame laser 25"/>
+    <node pkg="tf" name="camera_transform" type="static_transform_publisher" args="0.12 0 0 0 0 1 0 robot_frame camera 25"/>
+
+    <include file="$(find seismic_bringup)/launch/crane_module.launch"/>
+</launch> 
+        
