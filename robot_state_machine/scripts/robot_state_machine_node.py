@@ -31,8 +31,8 @@ from smach import CBState
 
 from actionlib.simple_action_client import GoalStatus
 
-import robot_state_machine
-from robot_state_machine import srv
+import task_determiner
+from task_determiner import srv
 import crane_state_machine
 from crane_state_machine import msg
 import move_base
