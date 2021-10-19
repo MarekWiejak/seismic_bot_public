@@ -59,7 +59,7 @@ class FakeTaskGenerator:
     def load_points(self, req):
         print("Loading new points")
         res = EmptyResponse()
-        self.pos_list_ = POS_LIST
+        self.pos_list_ = POS_LIST.copy()
         return res
 
 # wraps pose vector into PoseStamped
